@@ -23,4 +23,3 @@ lookup the toolkit through \code{\link{guiToolkit}}.}
 \description{
 Used as template for documentation
 }
-

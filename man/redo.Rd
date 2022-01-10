@@ -16,7 +16,4 @@ redo(obj, ...)
 }
 \description{
 Some widgets support redo actions
-
-S3 method.
 }
-

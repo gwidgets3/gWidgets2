@@ -27,11 +27,4 @@ if \code{value} is logical and \code{FALSE} widget will be insensitive to user i
 }
 \description{
 A widget is enabled if it is sensitive to user input
-
-base S3 method for enabled.
-
-Set whether widget is enabled or not
-
-S3 method for setting enabled property
 }
-

@@ -15,4 +15,3 @@ logical
 \description{
 is value missing, null, 0-length or NA length 1
 }
-

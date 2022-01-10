@@ -14,7 +14,4 @@ isExtant(obj)
 }
 \description{
 Widgets can be destroyed, but their R object is still present. This is FALSE in that case.
-
-Basic S3 method for isExtant
 }
-

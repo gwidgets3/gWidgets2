@@ -9,4 +9,3 @@ installing_gWidgets_toolkits()
 \description{
 put in so can be updated easily
 }
-

@@ -19,4 +19,3 @@ the object or an error
 \description{
 Get an object from an environment specified by a string.
 }
-

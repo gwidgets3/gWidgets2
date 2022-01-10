@@ -51,7 +51,7 @@ guiToolkit <- function(name=NULL) {
     return(NULL)          # use NA to override choice
   }
 
-  
+
   ## no if it is null, we have to find the possible choices
   if(is.null(name)) {
 
@@ -63,11 +63,11 @@ guiToolkit <- function(name=NULL) {
                        "gWidgets2wxWidgets",
                        "gWidgets2WWW")
 
-    
+
     f <- function(x) !inherits(try(find.package(x), silent=TRUE), "try-error")
     choices <- Filter(f, poss_packages)
 
-    
+
     if(interactive()) {
       if(length(choices) == 0) {
         message("No toolkit packages are installed.")
@@ -89,7 +89,7 @@ guiToolkit <- function(name=NULL) {
       options("guiToolkit"=name)
 
     } else {
-      ## not interactive 
+      ## not interactive
       return(NULL)
     }
   }
@@ -103,9 +103,9 @@ guiToolkit <- function(name=NULL) {
     name <- gsub("^2", "", name)
   }
 
-  
+
   ## require the package
-  require(sprintf("gWidgets2%s", name, sep=""), character.only=TRUE)
+  require(sprintf("gWidgets2%s", name), character.only=TRUE)
 
 
   ## check for headless Gtk
@@ -115,7 +115,7 @@ guiToolkit <- function(name=NULL) {
           stop("Can't load RGtk2")
   }
 
-  
+
   ## we return an instance of the toolkit class
   obj <- new(sprintf("guiWidgetsToolkit%s", name), toolkit = name)
   return(obj)

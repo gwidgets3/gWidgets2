@@ -23,12 +23,7 @@ focus(obj) <- value
 \description{
 a widget has focus if it will receive input events
 
-Basic S3 method
-
 For some widgets, this sets user focus (e.g. gedit gets focus for
 typing). For others, settig the focus calls the raise
 methods. (for gwindow, it will raise the window)
-
-Basic S3 method for focus
 }
-

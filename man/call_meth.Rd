@@ -20,4 +20,3 @@ helper function to bypass lack of cached value in method call
 \note{
 use as do.call(call_meth, args)
 }
-

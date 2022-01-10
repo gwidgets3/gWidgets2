@@ -18,4 +18,3 @@
 \description{
 Toolkit constructor
 }
-

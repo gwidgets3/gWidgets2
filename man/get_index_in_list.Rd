@@ -17,4 +17,3 @@ returns index of element or integer(0)
 \description{
 Like match, but works with a list
 }
-

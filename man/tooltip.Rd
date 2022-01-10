@@ -29,4 +29,3 @@ Set a tooltip for the widget
 
 Basic S3 method for tooltip<-
 }
-

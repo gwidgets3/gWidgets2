@@ -4,8 +4,8 @@
 \alias{font}
 \alias{font.default}
 \alias{font<-}
-\alias{font<-.GText}
 \alias{font<-.default}
+\alias{font<-.GText}
 \title{Returns font specification for widget, if available}
 \usage{
 font(obj)
@@ -47,15 +47,6 @@ These are from Gtk's font specs, which though fairly standard, may
 not be totally supported in the other toolkits.}
 }
 \description{
-Returns font specification for widget, if available
-
-Basic S3 method for font
-
-Set font for a widget
-
-Basic S3 method for setting font
-
 The \code{font} assignment method is used to change the font of
 the currently selected text.
 }
-

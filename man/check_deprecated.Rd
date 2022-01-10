@@ -14,4 +14,3 @@ check_deprecated(deprecated_args = list(), ...)
 \description{
 Many arguments were deprecated due to various reasons. This is meant to ease porting of code.
 }
-

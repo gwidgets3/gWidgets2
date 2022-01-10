@@ -24,6 +24,7 @@ manipulated through various methods. The package provides a few
 new generics and, as much as possible, leverages existing methods
 for R.
 
+
 \subsection{Control constructors}{
 
 Controls are created by constructors. The package API includes the
@@ -46,6 +47,7 @@ choices to select from and possible and entry area for free
 response}
 
 \item{\code{\link{gdf}}}{Provides a data frame editing widget}
+
 
 \item{\code{\link{gedit}}}{Provides a single line text entry widget}
 
@@ -136,7 +138,7 @@ are S3 methods. The actual returned object is a reference class
 instance, as provided by an underlying toolkit. These may have
 toolkit-specific methods defined as reference class methods (i.e.,
 call them using \code{$meth_name}). Any such methods are
-documented in the toolkit packages.
+documented in the toolkit packages. 
 
 \describe{
 \item{\code{\link{svalue}}, \code{\link{svalue<-}}}{
@@ -178,6 +180,7 @@ callback.}
 \item{\code{\link{getToolkitWidget}}}{Returns the underlying
 toolkit object that is packaged into a \pkg{gWidgets2} object}
 
+
 \item{\code{\link{add}}}{Method used to add a child component to a
 parent container}
 
@@ -214,6 +217,7 @@ that a selection widget offers. Also used to specify layout in
 applicable.}
 
 } }
+
 
 \subsection{Event handlers}{
 
@@ -321,4 +325,3 @@ John Verzani \email{jverzani@gmail.com}
 Maintainer: John Verzani \email{jverzani@gmail.com}
 }
 \keyword{package}
-

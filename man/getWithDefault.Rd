@@ -17,4 +17,3 @@ x or default
 \description{
 Return x unless NULL, NA, length 0, ..., in which case we give default
 }
-

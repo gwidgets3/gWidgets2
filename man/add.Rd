@@ -9,8 +9,7 @@
 \usage{
 add(obj, child, expand = FALSE, fill = NULL, anchor = NULL, ...)
 
-\method{add}{default}(obj, child, expand = FALSE, fill = NULL,
-  anchor = NULL, ...)
+\method{add}{default}(obj, child, expand = FALSE, fill = NULL, anchor = NULL, ...)
 
 delete(obj, child)
 
@@ -42,12 +41,7 @@ Cartesian pair in {-1,0,1} x {-1, 0, 1}.}
 \description{
 Add packs in child objects.
 
-Basic S3 method for add
-
 Delete may or may not remove a child. This is toolkit
 specific. It may also be tied up with garbage collection. To avoid
 that, keep a reference to the child object before deleting.
-
-Basic S3 method for add
 }
-
