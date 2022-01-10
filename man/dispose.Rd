@@ -17,7 +17,4 @@ dispose(obj, ...)
 \description{
 Dispose of object, primarily a window though this is modified in
 \code{GNoteBook} and \code{GText}.
-
-main dispose method. Calls dispose for GWindow
 }
-

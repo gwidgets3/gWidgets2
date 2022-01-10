@@ -17,4 +17,3 @@ throws error if a mismatch
 \description{
 The S3 dispatch assumes naming conventions in the class names. This offers some check.
 }
-

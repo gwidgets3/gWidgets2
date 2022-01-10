@@ -4,8 +4,13 @@
 \alias{gwidget}
 \title{Common parts of a widget}
 \usage{
-gwidget(handler = NULL, action = NULL, container = NULL, ...,
-  toolkit = guiToolkit())
+gwidget(
+  handler = NULL,
+  action = NULL,
+  container = NULL,
+  ...,
+  toolkit = guiToolkit()
+)
 }
 \arguments{
 \item{handler}{A handler assigned to the default change
@@ -50,4 +55,3 @@ lookup the toolkit through \code{\link{guiToolkit}}.}
 \description{
 Used as template for documentation
 }
-

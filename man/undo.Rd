@@ -16,7 +16,4 @@ undo(obj, ...)
 }
 \description{
 Some widgets support undo actions. See reference class method \code{can_undo} as well.
-
-S3 method.
 }
-

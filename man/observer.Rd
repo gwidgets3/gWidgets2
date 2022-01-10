@@ -17,4 +17,3 @@ not exported, call using :::}
 \description{
 constructor for handler object
 }
-

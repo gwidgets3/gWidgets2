@@ -1,5 +1,8 @@
 ## The `gWidgets2` package
 
+> `gWidgets2` is in maintenance-mode only. Currently only the `tcltk` version is viable, though likely `gWidgetsWWW2` still works.
+
+
 The `gWidgets2` package is a rewrite of the `gWidgets` package that
 allows R users to easily create graphical user interfaces (GUIs) from
 within R in a toolkit-independent manner. The package itself sets up
@@ -8,23 +11,17 @@ integrates this into the underlying toolkit library.
 
 Currently there are the following packages:
 
-* `gWidgets2RGtk2` for interfacing with the `GTK` set of widgets through the `RGtk2` package. 
-
 * `gWidgets2tcltk` for interfacing with the `TCL/TK` widgets through the `tcltk` package.
 
-* `gWidgets2Qt` for interfacing with the `Qt` set of widget through the `qtbase`
 
-Additionally, for web programming the packages `gWidgetsWWW2` and
-`gWidgetsWWW2.rapache` implement basically the same API using the
+* **ARCHIVED** [`gWidgets2RGtk2`](https://github.com/gwidgets3/gWidgetsRGtk2) for interfacing with the `GTK` set of widgets through the `RGtk2` package.
+
+* **DEAD** `gWidgets2Qt` for interfacing with the `Qt` set of widget through the `qtbase`
+
+Additionally, for web programming the package [`gWidgetsWWW2`](https://github.com/gwidgets3/gWidgetsWWW2) (**ARCHIVED**)
+implements basically the same API using the
 ExtJs JavaScript libraries.
 
-To use the package you need to have intalled: the underlying graphical
-toolkit libraries, one of the basic R interfaces (`RGtk2`, `tcltk` or
-`Qt`), then `gWidgets2` and one or more of the `gWidgets2XXX`
-packages. The `tcltk` interface is usually the easiest, as the
-underlying graphical toolkit libraries are bundled with the standard
-windows binary of R, thought `RGtk2` and `Qt` versions work with a
-much richer underlying set of controls.
 
 
 The `gWidgets2` API exposes only a small subset of what is available
@@ -39,7 +36,7 @@ g <- ggroup (cont = w)                        ## A box container
 b <- gbutton("Click me for a message", cont=g, expand=TRUE)  ## some control
 
 addHandlerClicked(b, function(...) {          ## adding a callback to an event
-  gmessage("Hello world!", parent=w)          ## a dialog		    
+  gmessage("Hello world!", parent=w)          ## a dialog
 })
 
 visible(w) <- TRUE                            ## a method call
@@ -62,7 +59,7 @@ directory of the package and the package `vignette`.
 
 * Should be easier to maintain. The documentation is done with
   roxygen2. The old version was by hand. It required some tedious
-  stuff, best left unsaid. 
+  stuff, best left unsaid.
 
 * rethinking some of the argument names, functions etc.. I don't think
   we need `gcommandline`, `gformlayout`, `ggenericwidget`, etc. These
@@ -81,4 +78,3 @@ directory of the package and the package `vignette`.
   to derive subclasses
 
 * adding in some other features. For example, `gprogressbar`, `gtimer`, `gstackwidget`, ...
-

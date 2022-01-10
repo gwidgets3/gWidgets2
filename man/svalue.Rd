@@ -4,8 +4,8 @@
 \alias{svalue}
 \alias{svalue.default}
 \alias{svalue<-}
-\alias{svalue<-.GFormLayout}
 \alias{svalue<-.default}
+\alias{svalue<-.GFormLayout}
 \title{svalue}
 \usage{
 svalue(obj, index = FALSE, drop = NULL, ...)
@@ -55,10 +55,7 @@ explicity provide it.
 
 This method sets the selected value of, or main property of the widget.
 
-Base S3 method
-
 For \code{gformlayout} the \code{svalue} assigment method takes a
 named list and calls \code{svalue<-} on the children with matching
 names.
 }
-

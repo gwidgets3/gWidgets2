@@ -24,4 +24,3 @@ an instance of guiWidgetsToolkit sub class.
 \description{
 set or get the current toolkit for gWidgets
 }
-
